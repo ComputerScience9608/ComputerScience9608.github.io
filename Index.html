@@ -412,17 +412,16 @@ p {line-height: 2}
     <a href="Index.html#PastPapers" style="width:33%;font-family:arial;font-size:32;" class="w3-hover-black w3-bar-item w3-button w3-padding-large"><strong>PastPapers</strong></a>
   </div>
 </div>
-
-
 <!-- Subject -->
-<div style="float:left;width:50%;z-index:3;">
+<table width="100%">
+<tbody style="height:100%;width:100%;min-height:100%;" id="body">
+<tr  width="100%" height="100%">
+<td style="float:left;width:50%;z-index:3;" height="100%">
 <main id="main" class="site-main">
-<article id="post-1020" class="post-1020 page type-page status-publish hentry">
-<div class="entry-content">
 <a name="Resources"><p><span style="color: #0000ff;"><strong>Explain about Identifier and Variable. How identifier and variable is different? List down the points.</strong></span></p></a>
-<p><span style="color: #0000ff;"><strong>Identifier:</strong></span> The name we use to call a particular entity in a program, which is not a keyword, is called identifier. i.</p>
+<p><span style="color: #0000ff;"><strong>Identifier:</strong></span> The name we use to call a particular entity in a program, which is not a keyword, is called identifier.</p>
 <ol>
-<li>Identifier is used to name a variable, function, class, structure, union, etc. ii. It is created to give</li>
+<li>Identifier is used to name a variable, function, class, structure, union, etc.</li>
 <li>It is created to give unique name to an entity.</li>
 <li>All identifiers are not variable.</li>
 </ol>
@@ -477,7 +476,7 @@ Check data sent to process to stop or start process.</p>
 It represents a programming modules.</p>
 <p><strong><span style="color: #0000ff;">Example of structure diagram: </span></strong></p>
 <p><span style="color: #0000ff;"><strong>Programming language:</strong></span> <em>Visual Basic </em></p>
-<blockquote><p>Sub howManyThrees()</p>
+<blockquote style="font-color:blue;font-family:Comic sans ms;font-weight:bolder;"><p>Sub howManyThrees()</p>
 <p style="padding-left: 30px;">Dim num1, count, total As Integer<br>
 num1 = startMsg()<br>
 count = 0<br>
@@ -512,7 +511,7 @@ endMsg(count)</p>
 <p style="padding-left: 30px;"><strong><span style="color: #0000ff;">White-box testing:</span></strong> In this method the internal structure design or implementation of the item being tested is known to the tester. Tester validates the internal structure of the item under consideration along with the output. In short, white-box testing is testing every path through the program code. In IDE setting breakpoints, stepping and subroutine parameter checking are the features that provides to carry out white box testing.</p>
 <p style="padding-left: 30px;"><strong><span style="color: #0000ff;">Stub testing:</span></strong> When you develop a user interface, you may wish to test it before you have implemented all the facilities. You can write a ‘stub’ for each procedure. The procedure body only contains an output statement to acknowledge that the call was made.</p>
 <p><strong><span style="color: #0000ff;">Difference between Black-box and White-box testing:</span></strong></p>
-<table>
+<table border="3">
 <tbody>
 <tr>
 <td>&nbsp;<strong><span style="color: #0000ff;">Black-box testing</span></strong></td>
@@ -543,7 +542,7 @@ endMsg(count)</p>
 <p style="padding-left: 60px;">A similar example is a call to a function that requires two parameters in the function header; an error is reported if the programmer only provides one parameter. Similarly, the programmer may provide the parameter but it is of the wrong data type.</p>
 <p style="padding-left: 30px;"><strong><span style="color: #0000ff;">Logic error:</span></strong> ( an error in the logic of the solution that causes program not to behave as intended.)</p>
 <p style="padding-left: 60px;">A logic error occurs when the programmer makes a mistake in their logic for some part of the program. Suppose a programmer wants the first 10 positive integers to be output and creates the following algorithm:</p>
-<blockquote>
+<blockquote style="font-color:blue;font-family:Comic sans ms;font-weight:bolder;">
 <p style="padding-left: 60px;">FOR Count = 0 TO 10</p>
 <p style="padding-left: 60px;">OUTPUT Count</p>
 <p style="padding-left: 60px;">NEXT Count</p>
@@ -551,7 +550,7 @@ endMsg(count)</p>
 <p style="padding-left: 60px;">This algorithm has no grammatical errors but it does not produce the correct result. It produces the integers 0 to 10 not 1 to 10. This type of error can only be found by thorough testing. The programmer care carefully check the code by reading it or can attempt to run the program. Another common error is to use the wrong arithmetic symbol, e.g. a+b instead of a-b, or to put parentheses in the wrong place, such as (a+b-c)*d instead of (a+b)-c*d. These errors should be identified during testing and are all a mistake in the logic of the programmer.</p>
 <p style="padding-left: 30px;"><strong><span style="color: #0000ff;">Run-time error:</span></strong> ( an error that cause program execution to crash or freeze. )</p>
 <p style="padding-left: 60px;">Run-time errors occur during the execution (running) of the program. A typical error is to have an expression, such as (a+b)/(c-d), used in the program but c is equal to d, resulting in an attempted division by zero. The problem is that this error may be undetected for a considerable time because the equality of c and d rarely happens. However, it could be disastrous when it does. It is a good idea to test the denominator before division to ensure that this error doesn’t crash the program. Instead, the programmer “traps” the error and displays an error message, as seen in the following code:</p>
-<p style="padding-left: 60px;">Dim A, B, C, D As Integer</p>
+<blockquote style="font-color:blue;font-family:Comic sans ms;font-weight:bolder;"><p style="padding-left: 60px;">Dim A, B, C, D As Integer</p>
 <p style="padding-left: 60px;">Dim Denominator As Single</p>
 <p style="padding-left: 60px;">A = InputBox(“A …”)</p>
 <p style="padding-left: 60px;">B = InputBox(“B …”)</p>
@@ -562,7 +561,7 @@ endMsg(count)</p>
 <p style="padding-left: 90px;">Console.writeline (“Answer is … ” &amp; Denominator)</p>
 <p style="padding-left: 60px;">Else</p>
 <p style="padding-left: 90px;">Console.writeline (“Denominator is Zero”)</p>
-<p style="padding-left: 60px;">End If</p>
+<p style="padding-left: 60px;">End If</p></blockquote>
 <p><strong><span style="color: #0000ff;">What is Dry-run and trace table? Explain about the debugging features of the programming environment: breakpoint and stepping. </span></strong></p>
 <p style="padding-left: 30px;"><span style="color: #0000ff;"><strong>Dry-run:</strong></span> The process of checking the execution of an algorithm or program by recording variable values in a trace table.</p>
 <p style="padding-left: 30px;"><strong><span style="color: #0000ff;">Trace table:</span></strong> A table with a column for each variable that records their changing value.</p>
@@ -637,7 +636,7 @@ endMsg(count)</p>
 <p style="padding-left: 30px;"><span style="color: #0000ff;"><strong>Rogue value:</strong> </span>A specific value, outside the generally expected range, which is used to terminate a list of data items.</p>
 <p style="padding-left: 30px;">Consider the following simple program:</p>
 <p style="padding-left: 30px;"><em>Program to print number from 1 to 8 ( both inclusive ) :</em></p>
-<blockquote><p>Dim i As Integer = 1</p>
+<blockquote style="font-color:blue;font-family:Comic sans ms;font-weight:bolder;"><p>Dim i As Integer = 1</p>
 <p>Sub Main()</p>
 <p style="padding-left: 30px;">Do</p>
 <p style="padding-left: 60px;">Console.WriteLine(i)</p>
@@ -664,127 +663,70 @@ endMsg(count)</p>
 <li>upper case keywords or capitalisation of keywords</li>
 <li>annotation</li>
 </ol>
-</ul>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <hr>
-<a name="Code"><h1 align="center" class="w3-display-container w3-wide" style="width:100%;z-index:1;">Code In Python</h1></a>
 
-</div>
-</article>
 </main>
-
-</div>
-<aside>
-<div  style="background-color:grey;width:48%;float:right;height:100%;min-height:100%;display:block;">
+</td>
+<td style="background-color:grey;width:48%;float:right;display:container;">
 <div id="pdf">
 <h6><strong>Pre-Release Material 2019</strong></h6>
 <embed style="width:100%;height:800px;" src="https://dochub.com/mirzaazwad8/xOeNO9/new-doc-2019-01-18-13-01-19-pdf?dt=shJYGvtqY7bxVaawzu-d">
-
-</div>
-<center style="margin-top: 10px;">
-<div class="col-lg-12">
 <a class="w3-bar-item w3-button w3-hover-white w3-black" style="font-color:white;" target="_blank" href="https://dochub.com/mirzaazwad8/xOeNO9/new-doc-2019-01-18-13-01-19-pdf?dt=shJYGvtqY7bxVaawzu-d">Click Here To Open In Full Window</a>
 </div>
 <div id="task1">
 <p>Note: For the code to work, please do change the syntax as per your IDLE environment, make sure indentation is correct and also add extra lines of code if you deem necessary. The code is debugged and tested. Hope the code helps you out. You can also run the code in the IDLE available in this website, test it and edit it. Best of luck for AS Level 2019</p>
 <h6><strong>Pre-Release Material 2019 solution for task-1</strong></h6>
 <iframe src="https://code.sololearn.com/cAOy9O3m9vWs" width="100%" height="800px" style="vertically-align:bottom;"><p><font color="white">frame not supported</font></p></iframe>
-
 </div>
-<center style="margin-top: 10px;">
-<div class="col-lg-12">
 <a class="w3-bar-item w3-button w3-hover-white w3-black" style="font-color:white;" target="_blank" href="https://code.sololearn.com/cAOy9O3m9vWs">Click Here To Open In Full Window</a>
-</div>
 <div id="task2">
 <p>Note: For the code to work, please do change the syntax as per your IDLE environment, make sure indentation is correct and also add extra lines of code if you deem necessary. The code is debugged and tested. Hope the code helps you out. You can also run the code in the IDLE available in this website, test it and edit it. Best of luck for AS Level 2019</p>
 <h6><strong>Pre-Release Material 2019 solution for task-2</strong></h6>
 <iframe src="https://code.sololearn.com/cZa2hT9nT85f" width="100%" height="800px" style="vertically-align:bottom;"><p><font color="white">frame not supported</font></p></iframe>
-
 </div>
-<center style="margin-top: 10px;">
-<div class="col-lg-12">
+<div id="pdf2">
 <a class="w3-bar-item w3-button w3-hover-white w3-black" style="font-color:white;" target="_blank" href="https://code.sololearn.com/cZa2hT9nT85f">Click Here To Open In Full Window</a>
-</div>
-<div id="pdf">
 <h6><strong>Syllabus 2017-2019</strong></h6>
 <embed style="width:100%;height:800px;" src="https://www.cambridgeinternational.org/Images/202629-2017-2019-syllabus.pdf">
-
-</div>
-<center style="margin-top: 10px;">
-<div class="col-lg-12">
 <a class="w3-bar-item w3-button w3-hover-white w3-black" style="font-color:white;" target="_blank" href="https://www.cambridgeinternational.org/Images/202629-2017-2019-syllabus.pdf">Click Here To Open In Full Window</a>
-</div>
-</center>
-<div id="pdf">
 <h6><strong>More Notes</strong></h6>
 <embed style="width:100%;height:800px;" src="https://dochub.com/mirzaazwad8/pmB7jD/cie-as-computer-science-9608-practical-znotes-pdf?dt=UNeRDC4FchuyUg8R9p1q">
-
-</div>
 <center style="margin-top: 10px;">
-<div class="col-lg-12">
 <a class="w3-bar-item w3-button w3-hover-white w3-black" style="font-color:white;" target="_blank" href="https://drive.google.com/open?id=1yBq3JZj0A62LZbSFt5UP33vZkkq3PHH-">Click Here To Open In Full Window</a>
-</div>
-</center>
-<div id="pdf">
 <embed style="width:100%;height:800px;" src="https://dochub.com/mirzaazwad8/32g39Y/cie-as-computer-science-9608-practical-worksheet-znotes-pdf?dt=WJhGX2LsgizSvJ62BNDp">
-</div>
-
-<center style="margin-top: 10px;">
-<div class="col-lg-12">
 <a class="w3-bar-item w3-button w3-hover-white w3-black" style="font-color:white;" href="https://dochub.com/mirzaazwad8/32g39Y/cie-as-computer-science-9608-practical-worksheet-znotes-pdf?dt=WJhGX2LsgizSvJ62BNDp">Click Here To Open In Full Window</a>
-</div>
-</center>
-<div id="pdf">
 <h6><strong>Computer Science Coursebook</strong></h6>
 <embed style="width:100%;height:800px;" src="https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Computer%20Science%20Coursebook.pdf">
-</div>
-<center style="margin-top: 10px;">
-<div class="col-lg-12">
 <a class="w3-bar-item w3-button w3-hover-white w3-black" style="font-color:white;" target="_blank" href="https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Computer%20Science%20Coursebook.pdf">Click Here To Open In Full Window</a>
 </div>
-<div>
 <h1>Using Pycharm</h1>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/_uQrJ0TkZlc?start=110&amp;end=10380&amp;" frameborder="0" allow="accelerometer autoplay encrypted-media gyroscope picture-in-picture" allowfullscreen><p>Video cannot be played</p></iframe>
+<div style="background-color:grey;">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/>
 </div>
 <br/>
-</center>
-</center>
-</center>
-</center>
-</div>
-<table width="100%" class="w3-display-container w3-wide" height="100%" style="background-color:black;min-height:100%;">
-<tbody>
-<tr>
+</td>
+</tr>
+<tr width="100%" class="w3-display-container w3-wide" height="100%" style="background-color:black;min-height:100%;">
+
 <td id="development environment" width="100%" height="80%">
 <div>
+<a name="Code"><h1 align="center"><font color="white">Code In Python</font></h1></a>
 <iframe height="768px" width="100%" src="https://repl.it/@ComputerScienc6/MulticoloredQuietCurrency?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 </div>
 </td>
 </tr>
-</tbody>
-</table>
-
-<table width="100%">
-<tbody class="w3-display-container w3-wide" height="100%" style="background-color:white;min-height:100%;">
-<tr>
+<tr class="w3-display-container w3-wide" height="100%" style="background-color:white;min-height:100%;">
 <td><a name="PastPapers"><h1 align="center" class="w3-display-container w3-wide" style="width:100%;z-index:1;">PastPapers(PapaCambridge)</h1></a></td>
 </tr>
 <tr>
@@ -801,13 +743,6 @@ endMsg(count)</p>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-</aside>
 <footer style="z-index:1;font-color:black;text-align:center;" width="100%" height="10px">
 <p><strong>These contents are from websites such as Znotes, GCE Guide, PapaCambridge, Best Exam Help and we recognise Mr. Mosh for providing his Python tutorials</strong></p><br/>
 <div id="copyright"><h6><strong> &copy; 2019 Mirza Mohammad Azwad</strong></h6></div>
