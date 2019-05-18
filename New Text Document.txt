@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+  var images = [
+  "Images/1.png,
+"Images/2.png",
+"Images/3.png",
+"Images/4.png",
+"Images/5.png",
+"Images/6.png",
+"Images/7.png",
+"Images/8.png",
+"Images/9.png",
+"Images/10.png",
+"Images/11.png",
+"Images/12.png",
+"Images/13.png",
+"Images/14.png",
+"Images/15.png",
+"Images/16.png",
+"Images/17.png",
+"Images/18.png",
+"Images/19.png",
+"Images/20.png",
+"Images/21.png"
+  ];
+  var num = 0;
+
+function next() {
+  var slider = document.getElementById("slider");
+  num++;
+  if(num >= images.length) {
+    num = 0;
+  }
+  slider.src = images[num];
+  }
+
+function prev() {
+  var slider = document.getElementById("slider");
+  num--;
+  if(num < 0) {
+    num = images.length-1;
+  }
+  slider.src = images[num];
+
+</script>
+</head>
+<body>
+<div>
+  <button onclick="prev()"> Prev </button>
+  <img id="slider" src="Images/1.png" 
+    width="200px" height="100px"/>
+  <button onclick="next()"> Next </button>
+</div>
+</body>
+</html>
