@@ -1,0 +1,69 @@
+<html>
+  <head>
+  	<meta http-equiv="refresh" content="10">
+    <title>Welcome 2020</title>
+    <link rel="icon" type="image/jpg" href="https://media.istockphoto.com/vectors/confetti-icon-vector-sign-and-symbol-isolated-on-white-background-vector-id1023596870" />
+    <style>
+    	body{
+    		background-image: url(https://3.bp.blogspot.com/-H9CnZcHz_nE/W-DsU6ZkqCI/AAAAAAAAAXQ/WzscOokMR94dVbRezd4_nihDcRO65TEGACHMYCw/s1600/rainbow-abstract-background-wallpaper-of-wallpaperback.jpg);
+    		background-repeat: no-repeat;
+    		background-size: 100% 100%;
+    		color:white;
+    	}
+    	h1{
+    		font-family: Courier;
+    		font-size:200%;
+    		text-align: center;
+    		text-decoration-style:bold;
+    		transition: width 2s, height 4s;
+    	}
+    	span{
+    		color:black;
+    		background-color: white;
+    		border:5px solid black;
+    		text-decoration-style: bold;
+    		text-decoration:blink;
+    	}
+    	p{
+    		font-size: 160%;
+    		font-family: Courier;
+    		text-align: center;
+    		position:relative;
+    		top:30%;
+
+    	}
+    </style>
+  </head>
+  <body>
+  	<h1 style="font-size: 310%;font-family:Courier;"></h1>
+  	<h1>From Mirza Mohammad Azwad</h1>
+ <p><b>Time Elapsed:</b> <span></span>:<span></span>:<span></span></p>
+  	<script>
+  		var dn=new Date();
+  		var Day=dn.getDate();
+  		var Month=dn.getMonth();
+  		var Year=dn.getFullYear();
+  		var Hours=dn.getHours();
+  		var Minutes=dn.getMinutes();
+  		var Seconds=dn.getSeconds();
+  		var Milliseconds=dn.getMilliseconds();
+  		var d=new Date(Year,Month,Day,Hours,Minutes,Seconds,Milliseconds);
+  		var event = new Date("January 01, 2020 00:00:00");
+  		var arr = document.getElementsByTagName("H1");
+  		var array=document.getElementsByTagName("SPAN")
+  		if (d.getDate()>=event.getDate() && d.getHours()>=event.getHours()){
+  			NewYear=true;
+  		}
+  		else{
+  			NewYear=false;
+
+  			}
+  		if(NewYear==true){
+  			arr[0].innerHTML="Happy New Year";
+  			array[0].innerHTML=d.getHours();
+  			array[1].innerHTML=d.getMinutes();
+  			array[2].innerHTML=d.getSeconds();
+  		}
+  	</script>
+  </body>
+</html>
